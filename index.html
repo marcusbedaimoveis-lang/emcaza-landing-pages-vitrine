@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <title>Vitrine de Imóveis | EmCaza</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+        body { font-family: sans-serif; padding: 20px; background: #333333; color: white; }
+        .logo { display: block; margin: 0 auto 20px; max-width: 250px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card { background: #444444; padding: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .carousel { position: relative; display: flex; align-items: center; }
         .carousel img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
-        .carousel button { position: absolute; background: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer; }
+        .carousel button { position: absolute; background: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer; padding: 10px; }
         .carousel button:nth-child(1) { left: 0; }
         .carousel button:nth-child(3) { right: 0; }
-        .price { color: #27ae60; font-weight: bold; }
+        .price { color: #2ecc71; font-weight: bold; margin: 10px 0; }
         .btn-detalhes, .btn-whatsapp { display: inline-block; padding: 10px; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px; }
         .btn-detalhes { background: #007bff; }
         .btn-whatsapp { background: #25d366; }
     </style>
 </head>
 <body>
-    <h1>Nossos Imóveis</h1>
+    <img src="assets/logo_emcaza.jpg" alt="Logo EmCaza Imóveis" class="logo">
     <div class="grid">
         <div class="card">
             <div class="carousel" id="car0">
